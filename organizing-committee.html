@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Organizing Committee - Ethical AI Workshop</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .committee-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-gap: 20px;
+            margin: 20px;
+        }
+
+        .committee-member {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .profile-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-bottom: 15px;
+        }
+
+        .committee-row {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 30px;
+        }
+
+        .member-info h3 {
+            margin: 10px 0 5px;
+            font-size: 1.2em;
+        }
+
+        .member-info p {
+            margin: 5px 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #f1f1f1;
+        }
+    </style>
 </head>
 <body>
 
@@ -13,15 +61,17 @@
     </header>
 
     <nav>
-        <a href="index.html">Home</a>
-        <a href="paper-submission.html">Paper Submission</a>
-        <a href="important-dates.html">Important Dates</a>
-        <a href="call-for-papers.html">Call for Papers</a>
-        <a href="program.html">Tentative Program</a>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="paper-submission.html">Paper Submission</a></li>
+            <li><a href="important-dates.html">Important Dates</a></li>
+            <li><a href="call-for-papers.html">Call for Papers</a></li>
+            <li><a href="program.html">Tentative Program</a></li>
+        </ul>
     </nav>
 
-    <section>
-        <h2>Organizing Committee</h2>
+    <section class="committee-section">
+        <!-- First row - Sandeep Gupta centered -->
         <div class="committee-member">
             <img src="Professor Sandeep Gupta.jfif" alt="Professor Sandeep Gupta" class="profile-img">
             <div class="member-info">
@@ -32,23 +82,26 @@
             </div>
         </div>
 
-        <div class="committee-member">
-            <img src="Payal.jfif" alt="Payal Kamboj" class="profile-img">
-            <div class="member-info">
-                <h3>Payal Kamboj</h3>
-                <p><strong>PhD Candidate, School of Computing and Augmented Intelligence, ASU</strong></p>
-                <p>Graduate Research Assistant</p>
-                <p>Email: <a href="mailto:pkamboj@asu.edu">pkamboj@asu.edu</a></p>
+        <!-- Second row - Payal Kamboj and Aranyak Maity side by side -->
+        <div class="committee-row">
+            <div class="committee-member">
+                <img src="Payal.jfif" alt="Payal Kamboj" class="profile-img">
+                <div class="member-info">
+                    <h3>Payal Kamboj</h3>
+                    <p><strong>PhD Candidate, School of Computing and Augmented Intelligence, ASU</strong></p>
+                    <p>Graduate Research Assistant</p>
+                    <p>Email: <a href="mailto:pkamboj@asu.edu">pkamboj@asu.edu</a></p>
+                </div>
             </div>
-        </div>
 
-        <div class="committee-member">
-            <img src="Aranyak Maity.jfif" alt="Aranyak Maity" class="profile-img">
-            <div class="member-info">
-                <h3>Aranyak Maity</h3>
-                <p><strong>PhD Candidate, School of Computing and Augmented Intelligence, ASU</strong></p>
-                <p>Graduate Research Assistant</p>
-                <p>Email: <a href="mailto:amaity1@asu.edu">amaity1@asu.edu</a></p>
+            <div class="committee-member">
+                <img src="Aranyak Maity.jfif" alt="Aranyak Maity" class="profile-img">
+                <div class="member-info">
+                    <h3>Aranyak Maity</h3>
+                    <p><strong>PhD Candidate, School of Computing and Augmented Intelligence, ASU</strong></p>
+                    <p>Graduate Research Assistant</p>
+                    <p>Email: <a href="mailto:amaity1@asu.edu">amaity1@asu.edu</a></p>
+                </div>
             </div>
         </div>
     </section>
